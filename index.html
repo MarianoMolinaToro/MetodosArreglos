@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1>Lista de tareas</h1>
+            <p>Nueva tarea</p>
+            <div class="input-container">
+                <input type="text" id="text-input" placeholder="Ingrese una tarea">
+                <button type="button" id="add-button">Agregar</button>
+            </div>
+        </div>
+
+        <div class="box2">
+            <div class="counter-container">
+                <div class="counter-item">
+                    <span>Total: <span id="total-counter">0</span></span>
+                </div>
+                <div class="counter-item">
+                    <span>Realizadas: <span id="completed-counter">0</span></span>
+                </div>
+            </div>
+            <table class="task-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tarea</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="task-list"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="assets/js/javascript.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,88 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 400px;
+  background-color: rgb(182, 182, 182);
+  width: 800px;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.box2 {
+  background-color: #999999;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+
+.counter-container {
+  margin: 15px;
+}
+
+.task-table {
+  margin: 15px;
+  width: 90%;
+  border-collapse: collapse; 
+}
+
+.task-table thead th {
+  background-color: #ddd;
+  padding: 10px;
+  text-align: left; 
+}
+
+.task-table td, .task-table th {
+  padding: 10px;
+}
+
+.task-table tr:last-child td {
+  border-bottom: none; /
+}
+
+.task-table tr {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; 
+  align-items: center; /
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  width: 70%;
+  align-items: center; 
+}
+
+#text-input {
+  width: 100%;
+}
+
+#add-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+
+.task-item {
+  display: grid;
+  align-items: start;
+  gap: 10px; 
+}
+
+
+.actions-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinear el contenido al principio de cada casilla */
+}
